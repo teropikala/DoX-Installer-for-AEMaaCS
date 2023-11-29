@@ -17,6 +17,7 @@
 
     <properties>
         <download-maven-plugin.version>1.6.1</download-maven-plugin.version>
+        <!-- Remove filevault-package-maven-plugin if it's already present in the parent POM -->
         <filevault-package-maven-plugin.version>1.0.4</filevault-package-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -37,12 +38,7 @@
                     <artifactId>download-maven-plugin</artifactId>
                     <version>${download-maven-plugin.version}</version>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.jackrabbit</groupId>
-                    <artifactId>filevault-package-maven-plugin</artifactId>
-                    <version>${filevault-package-maven-plugin.version}</version>
-                    <extensions>true</extensions>
-                </plugin>
+                <!-- Remove filevault-package-maven-plugin if it's already present in the parent POM -->
                 <plugin>
                     <groupId>org.apache.jackrabbit</groupId>
                     <artifactId>filevault-package-maven-plugin</artifactId>

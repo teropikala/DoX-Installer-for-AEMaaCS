@@ -60,6 +60,8 @@
 					<packageType>container</packageType>
 					<jcrRootSourceDirectory>${project.build.outputDirectory}/jcr_root</jcrRootSourceDirectory>
                     <allowIndexDefinitions>true</allowIndexDefinitions>
+					<!-- Validating installation package provided by Adobe not required -->
+					<skipValidation>true</skipValidation>
 				</configuration>
 			</plugin>
 		</plugins>
